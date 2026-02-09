@@ -1,0 +1,14 @@
+# Experiment 3: Wider model
+
+model:
+  num_layers: 2
+  embed_dim: 256 # Increased!
+  num_heads: 4
+
+training:
+  learning_rate: 0.001
+  batch_size: 16 # Smaller batch due to larger model
+
+experiment:
+  name: "exp3_2layers_embed256"
+  description: "2 layers, embed_dim=256, lr=1e-3"

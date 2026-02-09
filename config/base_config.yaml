@@ -1,0 +1,33 @@
+# Base Configuration for Mini-GPT Training
+
+# Model Architecture
+model:
+  vocab_size: 50257 # GPT-2 tokenizer vocabulary
+  embed_dim: 128 # Embedding dimension
+  num_heads: 4 # Number of attention heads
+  num_layers: 2 # Number of transformer layers
+  max_seq_len: 128 # Maximum sequence length
+  dropout: 0.1 # Dropout rate
+
+# Training
+training:
+  batch_size: 32
+  learning_rate: 0.001 # 1e-3
+  weight_decay: 0.01
+  num_epochs: 1
+  gradient_clip: 1.0
+
+# Data
+data:
+  train_data_path: "../Assignment1/processed_data/tokenized"
+
+# Logging
+logging:
+  log_dir: "logs"
+  checkpoint_dir: "checkpoints"
+  save_every_epoch: 1
+
+# Experiment
+experiment:
+  name: "baseline"
+  description: "Baseline model with 2 layers, 128 embed_dim"

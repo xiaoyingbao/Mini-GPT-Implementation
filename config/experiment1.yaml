@@ -1,0 +1,14 @@
+# Experiment 1: Deeper model (2 layers)
+# Inherits from base_config
+
+model:
+  num_layers: 2
+  embed_dim: 128
+
+training:
+  learning_rate: 0.001
+  batch_size: 32
+
+experiment:
+  name: "exp1_2layers_lr1e3"
+  description: "2 layers, embed_dim=128, lr=1e-3"

@@ -1,0 +1,13 @@
+# Experiment 2: Lower learning rate
+
+model:
+  num_layers: 2
+  embed_dim: 128
+
+training:
+  learning_rate: 0.0005 # 5e-4
+  batch_size: 32
+
+experiment:
+  name: "exp2_2layers_lr5e4"
+  description: "2 layers, embed_dim=128, lr=5e-4"
